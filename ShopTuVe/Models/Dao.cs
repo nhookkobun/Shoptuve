@@ -6,13 +6,15 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BooksShopOnline.Models
 {
-    public class Book
+    public class Dao
     {
+        private const string V = "Dao Description";
+
         [ScaffoldColumn(false)]
-        public int BookID { get; set; }
+        public int DaoID { get; set; }
         [Required, StringLength(100), Display(Name = "Name")]
-        public string BookName { get; set; }
-        [Required, StringLength(1000), Display(Name = "Book Description"),
+        public string DaoName { get; set; }
+        [Required, StringLength(1000), Display(Name = V),
         DataType(DataType.MultilineText)]
         public string Description { get; set; }
         public string ImagePath { get; set; }
