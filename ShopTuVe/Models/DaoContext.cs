@@ -6,12 +6,12 @@ using System.Data.Entity;
 
 namespace BooksShopOnline.Models
 {
-    public class BookContext : DbContext
+    public class DaoContext : DbContext
     {
-        public BookContext() : base("ShopTuVe")
+        public DaoContext() : base("ShopTuVe")
         { }
         public DbSet<Category> Categories { get; set; }
-        public DbSet<Book> Books { get; set; }
+        public DbSet<Dao> Daos { get; set; }
 
         public DbSet<CartItem> ShoppingCartItems { get; set; }
 
